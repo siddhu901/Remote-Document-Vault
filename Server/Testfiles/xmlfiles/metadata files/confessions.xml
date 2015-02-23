@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<root>
+  <filename>confessions.txt</filename>
+  <time-date>11/20/2013 7:01:07 PM</time-date>
+  <Verison-no>1.0</Verison-no>
+  <description>sfvfsf
+</description>
+  <dependencies>
+    <child>f1</child>
+    <child>f2</child>
+  </dependencies>
+  <categories>
+    <category>personal</category>
+  </categories>
+  <size>variable size!!</size>
+  <keywords>
+    <keyword>k1</keyword>
+    <keyword>k2</keyword>
+  </keywords>
+</root>

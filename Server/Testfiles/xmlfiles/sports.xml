@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root>
+  <child>football.xml</child>
+  <child>baseball.xml</child>
+  <child>cricket.xml</child>
+  <child>basketball.xml</child>
+</root>

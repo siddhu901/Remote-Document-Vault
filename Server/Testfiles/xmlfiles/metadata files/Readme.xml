@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<root>
+  <filename>Readme.txt</filename>
+  <time-date>11/25/2013 6:42:55 PM</time-date>
+  <Verison-no>1.0</Verison-no>
+  <description>RichTextBox
+</description>
+  <dependencies>
+    <child>TextBox</child>
+  </dependencies>
+  <categories>
+    <category>sports</category>
+  </categories>
+  <size>variable size!!</size>
+  <keywords>
+    <keyword>TextBox</keyword>
+  </keywords>
+</root>

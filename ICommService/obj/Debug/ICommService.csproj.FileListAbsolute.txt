@@ -1,0 +1,14 @@
+C:\su\cse681\code\Project4HelpF13\ICommService\bin\Debug\ICommService.dll
+C:\su\cse681\code\Project4HelpF13\ICommService\bin\Debug\ICommService.pdb
+C:\su\cse681\code\Project4HelpF13\ICommService\obj\Debug\ICommService.dll
+C:\su\cse681\code\Project4HelpF13\ICommService\obj\Debug\ICommService.pdb
+C:\su\cse681\code\Project4HelpF13\ICommService\obj\Debug\ICommService.csprojResolveAssemblyReference.cache
+C:\su\coretechnologies\CSharp\code\MediatorBasedCommunicator\ICommService\bin\Debug\ICommService.dll
+C:\su\coretechnologies\CSharp\code\MediatorBasedCommunicator\ICommService\bin\Debug\ICommService.pdb
+C:\su\coretechnologies\CSharp\code\MediatorBasedCommunicator\ICommService\obj\Debug\ICommService.dll
+C:\su\coretechnologies\CSharp\code\MediatorBasedCommunicator\ICommService\obj\Debug\ICommService.pdb
+C:\su\coretechnologies\CSharp\code\MediatorBasedCommunicator\ICommService\obj\Debug\ICommService.csprojResolveAssemblyReference.cache
+C:\Users\hppavilion\Desktop\proj4\ICommService\bin\Debug\ICommService.dll
+C:\Users\hppavilion\Desktop\proj4\ICommService\bin\Debug\ICommService.pdb
+C:\Users\hppavilion\Desktop\proj4\ICommService\obj\Debug\ICommService.dll
+C:\Users\hppavilion\Desktop\proj4\ICommService\obj\Debug\ICommService.pdb

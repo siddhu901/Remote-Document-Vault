@@ -1,0 +1,158 @@
+using System;
+using System.Xml.Linq;
+
+using System.IO;
+
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DocumentVault
+{
+  class Program
+  {
+
+    Dictionary<string, List<string>> parentracker = new Dictionary<string, List<string>>();
+    static void Main(string[] args)
+    {
+
+      new Program().Tool();
+
+
+    }
+
+    public void Tool()
+    {
+
+        Directory.SetCurrentDirectory(@"..\\..\\..\\Server\\Testfiles\\xmlfiles\\metadata files");
+
+        string[] allfiles=Directory.GetFiles(Directory.GetCurrentDirectory());
+
+        foreach(string file1 in allfiles)
+        {
+
+              string file = Path.GetFileName(file1);
+              List<string> dummy=new List<string>();
+              List<string> dummy1=new List<string>();
+
+              dummy.Add(file);
+              XDocument doc = XDocument.Load(file);
+               var q = from x in
+                doc.Elements("root")
+                  .Elements("dependencies")
+              .Descendants()
+              select x;
+
+          foreach(var item in q)
+          {
+
+            if(parentracker.ContainsKey((string)item))
+            {
+                  foreach(string itr in parentracker.Values)
+                  {
+                    dummy1.Add(itr);
+                  }
+                  parentracker.Remove((string)item);
+                  dummy1.Add(file);
+                  parentracker.Add((string)item, dummy1);
+            }
+            else
+                 parentracker.Add((string)item, dummy);
+          }
+        }
+         
+
+        foreach(KeyValuePair<string,List<string>> itr in parentracker)
+        {
+              Console.Write("file: {0}",itr);
+              foreach(string itr1 in itr.Value)
+              {
+                Console.Write("Parents: {0}", itr1);
+              }
+        }
+
+    }
+
+    }
+  }
+
+using System;
+using System.Xml.Linq;
+
+using System.IO;
+
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DocumentVault
+{
+  class Program
+  {
+
+    Dictionary<string, List<string>> parentracker = new Dictionary<string, List<string>>();
+    static void Main(string[] args)
+    {
+
+      new Program().Tool();
+
+
+    }
+
+    public void Tool()
+    {
+
+        Directory.SetCurrentDirectory(@"..\\..\\..\\Server\\Testfiles\\xmlfiles\\metadata files");
+
+        string[] allfiles=Directory.GetFiles(Directory.GetCurrentDirectory());
+
+        foreach(string file1 in allfiles)
+        {
+
+              string file = Path.GetFileName(file1);
+              List<string> dummy=new List<string>();
+              List<string> dummy1=new List<string>();
+
+              dummy.Add(file);
+              XDocument doc = XDocument.Load(file);
+               var q = from x in
+                doc.Elements("root")
+                  .Elements("dependencies")
+              .Descendants()
+              select x;
+
+          foreach(var item in q)
+          {
+
+            if(parentracker.ContainsKey((string)item))
+            {
+                  foreach(string itr in parentracker.Values)
+                  {
+                    dummy1.Add(itr);
+                  }
+                  parentracker.Remove((string)item);
+                  dummy1.Add(file);
+                  parentracker.Add((string)item, dummy1);
+            }
+            else
+                 parentracker.Add((string)item, dummy);
+          }
+        }
+         
+
+        foreach(KeyValuePair<string,List<string>> itr in parentracker)
+        {
+              Console.Write("file: {0}",itr);
+              foreach(string itr1 in itr.Value)
+              {
+                Console.Write("Parents: {0}", itr1);
+              }
+        }
+
+    }
+
+    }
+  }
+

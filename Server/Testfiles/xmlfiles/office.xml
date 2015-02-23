@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root>
+  <child>dailywork.xml</child>
+  <child>deadlines.xml</child>
+  <child>assignments.xml</child>
+  <child>meetings.xml</child>
+</root>
